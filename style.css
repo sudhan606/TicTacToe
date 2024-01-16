@@ -131,3 +131,10 @@ button:hover{
         transform: scale(1);
     }
 }
+@media (min-width:0)and(min-width:645px) {
+    button{
+        height: 10%;
+        width: 10%;
+       
+    }
+}
