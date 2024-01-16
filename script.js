@@ -4,6 +4,8 @@ let message=document.querySelector(".message");
 let turn=true;
 let count=0;
 let button=document.querySelectorAll("button");
+button[1].style.display="inline-block";
+button[0].style.display="none";
 let winner=[
     [0,1,2],
     [3,4,5],
