@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body
+{
+    background-image: url("back.png");
+    
+}
+.message{
+    height:3vmin;
+    width: fit-content ;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    color: #ECF9FF;
+}
+.turn{
+    color: white;
+    position:absolute;
+    top: 15%;
+    right: 1%;
+    font-size: 1.5rem;
+}
+h1{
+    height: 15%;
+    width:50% ;
+    align-self: center;
+    margin-top: 2px;
+    display: inline-block;
+    font-size: 3rem;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.greenc{
+    background-color: green;
+}
+.container{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height:70vmin;
+    width:70vmin;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+}
+.box{
+    height: 20vmin;
+    width: 20vmin;
+    background-color:#B4D4FF;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 500;
+}
+.box:hover{
+    box-shadow: 0 0 20px black;
+}
+.btndiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    right: 0.5%;
+}
+.btndiv img{
+    height: 80%;
+    width: 80%;
+    display: inline-block;
+    object-fit: contain;
+}
+button{
+    width: 15vmin;
+    height: 13vmin;
+    background: rgba(255, 255, 255, 0.119);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.226);
+    padding: 0.5rem;
+    margin: 5px;
+    color: #ECF9FF;
+}
+button:hover{
+    color: #9EC8B9;
+    background: rgba(255, 255, 255, 0.283);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.notclick{
+    pointer-events: none;
+}
+.transit{
+    animation: wins 1s alternate ;
+}
+@keyframes wins {
+    0%{
+        font-weight: 600;
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
