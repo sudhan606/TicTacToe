@@ -66,6 +66,7 @@ button.forEach((x)=>{
         count=0;
         turns.innerText="O";
         message.childNodes[1].classList.remove("transit");
+        turn=true;
     });
 })
 
